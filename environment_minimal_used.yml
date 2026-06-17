@@ -1,0 +1,14 @@
+name: env_name
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - matplotlib==3.10.1
+      - networkx==3.5
+      - numpy==2.2.6
+      - pandas==2.2.3
+      - seaborn==0.13.2
+      - statsmodels==0.14.4
