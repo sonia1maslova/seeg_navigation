@@ -14,7 +14,7 @@ if (!scope %in% allowed_scopes) stop("Unsupported scope: ", scope)
 replace <- length(args) >= 3L && identical(args[[3]], "replace")
 if (length(args) >= 3L && !replace) stop("Third argument must be replace, or omitted")
 result_root <- file.path(root, "results/pac/by_lina/segment_effect_adjusted", scope)
-output_root <- file.path(root, "figures/pac/by_lina/segment_effect_adjusted", scope)
+output_root <- file.path(root, "figures/pac/by_lina/pac_segment_effect/lmm_effects/adjusted", scope)
 rois <- c("Temporal_Mid L_Anterior", "Hippocampus L_Anterior",
           "Hippocampus L_Posterior", "Hippocampus R_Anterior")
 labels <- setNames(c("aMTG", "Hipp L Ant", "Hipp L Post", "Hipp R Ant"), rois)
@@ -196,7 +196,7 @@ for (analysis in c("main_pac", "power_control", "aperiodic_control_1_150Hz")) {
       legend.title = element_text(face = "bold", size = 13), legend.text = element_text(size = 11, color = "black"),
       legend.background = element_rect(fill = "white", color = NA), legend.box.background = element_blank(),
       legend.box.margin = margin(0, 0, 0, 0), plot.margin = margin(2, 2, 2, 2))
-  out <- file.path(output_root, analysis)
+  out <- file.path(output_root, analysis, "heatmaps")
   dir.create(out, recursive = TRUE, showWarnings = FALSE)
   stem <- paste0("heatmap_Segment_number_all_segments_", scope)
   png <- file.path(out, paste0(stem, ".png"))

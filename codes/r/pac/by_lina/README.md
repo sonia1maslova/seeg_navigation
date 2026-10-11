@@ -8,8 +8,12 @@
 - `codes/r/pac/by_lina/segment_effect_adjusted/`：调整终末segment排除规则的重拟合脚本。
 - `results/pac/by_lina/formal_raw_pac/`：李娜原正式结果，仅迁移，不修改内容。
 - `results/pac/by_lina/segment_effect_adjusted/`：本项目基于上述数据进行的R分析；包含 `exclude_terminal_corridor_and_junction` 和 `include_last` 两个平行分支，各自分为 `main_pac`、`power_control` 和 `aperiodic_control`。
-- `figures/pac/by_lina/segment_effect_adjusted/`：当前两个分支的六张热图，目录结构与结果对应；每个分支和各图目录都有 `FDR_CORRECTION_README.txt`。
-- `figures/pac/by_lina/pac_segment_effect/`：基于李娜原正式结果的历史图，保留原统计口径，不作为本次R重拟合及ROI内六项FDR的当前图。
+- `figures/pac/by_lina/pac_segment_effect/lmm_effects/adjusted/`：当前正式结果；包含两个分析范围，每个范围下分别保存主 PAC、功率控制和 1/f 控制的热图、森林图及校正说明。
+- `figures/pac/by_lina/pac_segment_effect/lmm_effects/lina_original/`：基于李娜原正式结果的对照图，保留原统计口径，不替换为调整版的六项 FDR。
+- `figures/pac/by_lina/pac_segment_effect/mean_trends/lina_original/`：历史 PAC 均值趋势图，完整保留原内容。
+- `figures/pac/by_lina/pac_segment_effect/mean_trends/adjusted/`：按照当前两个分析范围重新汇总的描述性均值趋势图。趋势线不是混合模型的推断结果。
+- `results/pac/by_lina/pac_segment_effect/mean_trends/adjusted/`：重新汇总的被试水平和组水平均值、SEM 及核验记录，不修改原 PAC 数值。
+- `codes/python/pac/by_lina/visualization/`：PAC segment 效应森林图和调整版均值趋势的计算及绘图脚本；均值计算与绘图分开。
 
 ## 2026-10-06迁移记录
 
@@ -75,6 +79,16 @@ Rscript codes/r/pac/by_lina/visualization/plot_adjusted_pac_segment_effect_heatm
 热图沿用power/encoding_lmm批准的风格：蓝白红零中心色阶、统一脑区简称、原始p值星号及BH q值短剑号；两个分支六张图共用系数色阶，频率文字靠近热图。只生成PNG、绘图数据CSV及校正说明TXT，不生成PDF/SVG。
 
 成功标记表示计算和数值核验完成，不表示科学假设显著成立。
+
+## 2026-10-11图目录整理
+
+原 `figures/pac/by_lina/pac_segment_effect/heatmaps` 和 `controls` 的历史图归入 `pac_segment_effect/lmm_effects/lina_original`；原 `figures/pac/by_lina/segment_effect_adjusted` 归入 `pac_segment_effect/lmm_effects/adjusted`；原 `figures/pac/by_lina/pac_by_segment` 归入 `pac_segment_effect/mean_trends/lina_original`。原文件逐个校验后迁移，不改写历史 PNG、PDF 或 CSV。历史 manifest 内记录的当时路径保留，目录映射由根目录的整理记录说明。
+
+现用热图脚本的默认输出位置已同步更新。混合模型结果仍保存在原 `results/pac/by_lina/segment_effect_adjusted`，李娜原结果仍保存在 `formal_raw_pac`，本次不移动或重拟合模型。
+
+森林图直接使用各版本已有的 segment 固定效应系数和 95% 置信区间。原始版本分别核验原有 6/18/36 项 BH 集合，调整版分别核验每脑区 6 项 BH 集合。森林图星号表示原始 p 值（* < .05，** < .01，*** < .001），† 表示该版本对应的 BH q < .05。热图保留既有标注规则。
+
+历史均值图的 18 个位置不含末 corridor，但保留末 junction。调整版纳入分支包含最长路径的 20 个位置；排除分支最多保留 17 个位置，删除各试次真实末 corridor 两个子段和末 junction，不重新编号。先在被试内平均相同 segment 位置的试次 PAC，再等权平均被试，SEM 来自被试间变异，不把触点或试次当作独立被试。
 
 ## 数值记录
 

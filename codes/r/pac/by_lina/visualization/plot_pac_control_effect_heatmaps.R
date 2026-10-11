@@ -19,7 +19,7 @@ project_root <- if (length(arguments)) arguments[[1]] else Sys.getenv(
 )
 project_root <- normalizePath(project_root, mustWork = TRUE)
 output_root <- Sys.getenv("PAC_CONTROL_HEATMAP_OUTPUT", unset = file.path(
-  project_root, "figures", "pac", "by_lina", "pac_segment_effect", "controls"
+  project_root, "figures", "pac", "by_lina", "pac_segment_effect", "lmm_effects", "lina_original"
 ))
 input_paths <- c(
   power_control = file.path(project_root, "results", "pac", "by_lina", "formal_raw_pac",
@@ -127,9 +127,9 @@ written_files <- character()
 summaries <- list()
 
 for (control in names(input_paths)) {
-  output_dir <- file.path(output_root, control)
-  dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
   for (variant in names(variants)) {
+    output_dir <- file.path(output_root, variant, control, "heatmaps")
+    dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
     dat <- statistics |> filter(.data$control == .env$control,
                                 scope == unname(variants[[variant]]))
     if (nrow(dat) != 18L) stop("Expected 3 ROI by 6 PAC combinations.")
@@ -211,6 +211,8 @@ manifest <- list(
   fdr_audit = list(power_control = power$audit, aperiodic_control = aperiodic$audit),
   summary = summaries, outputs = written_files
 )
-jsonlite::write_json(manifest, file.path(output_root, "plot_manifest.json"),
+provenance_dir <- file.path(output_root, "provenance")
+dir.create(provenance_dir, recursive = TRUE, showWarnings = FALSE)
+jsonlite::write_json(manifest, file.path(provenance_dir, "control_heatmap_plot_manifest.json"),
                      pretty = TRUE, auto_unbox = TRUE, digits = NA)
 message("Done. Source models, coefficients, and FDR results were not modified.")

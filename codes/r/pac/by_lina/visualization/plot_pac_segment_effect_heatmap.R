@@ -24,7 +24,7 @@ source(file.path(project_root, "codes", "r", "project_config.R"))
 
 result_root <- file.path(project_root, "results", "pac", "by_lina", "formal_raw_pac")
 output_dir <- Sys.getenv("PAC_SEGMENT_HEATMAP_OUTPUT", unset = file.path(
-  project_root, "figures", "pac", "by_lina", "pac_segment_effect", "heatmaps"
+  project_root, "figures", "pac", "by_lina", "pac_segment_effect", "lmm_effects", "lina_original"
 ))
 hpc_input <- file.path(result_root, "02_hpc_path_accumulation", "model_coefficients.csv")
 amtg_input <- file.path(result_root, "04_amtg_followup_and_behavior", "model_coefficients.csv")
@@ -182,7 +182,9 @@ for (variant in names(variants)) {
       legend.box.background = element_blank(), legend.box.margin = margin(0, 0, 0, 0),
       plot.margin = margin(t = 2, r = 2, b = 2, l = 2)
     )
-  png_file <- file.path(output_dir, paste0(
+  variant_dir <- file.path(output_dir, variant, "main_pac", "heatmaps")
+  dir.create(variant_dir, recursive = TRUE, showWarnings = FALSE)
+  png_file <- file.path(variant_dir, paste0(
     "heatmap_Segment_number_all_segments_", variant, ".png"
   ))
   ggsave(png_file, plot, width = 8.0, height = 5.5, units = "in", dpi = 300, bg = "white")
@@ -202,6 +204,8 @@ manifest <- list(
   fdr_method = "Stored family-specific q-values; BH independently checked, never replaced",
   fdr_audit = fdr_audit, outputs = written_files
 )
-jsonlite::write_json(manifest, file.path(output_dir, "plot_manifest.json"),
+provenance_dir <- file.path(output_dir, "provenance")
+dir.create(provenance_dir, recursive = TRUE, showWarnings = FALSE)
+jsonlite::write_json(manifest, file.path(provenance_dir, "main_heatmap_plot_manifest.json"),
                      pretty = TRUE, auto_unbox = TRUE, digits = NA)
 message("Done. Model coefficients and original FDR results were not modified.")

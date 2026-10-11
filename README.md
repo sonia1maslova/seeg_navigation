@@ -1,5 +1,11 @@
 # Project Shared Plotting
 
+## Latest code update — 2026-10-12
+
+The changes since code commit `563fc1f` are summarized in [本次代码更新说明 / code update notes](docs/CODE_UPDATE_20261011_POST_PUBLICATION.md). This incremental update adds PLV shared-legend plots, four-ROI Granger combined plots, scoped three-band DFI plotting, and reorganized PAC heatmaps, forest plots and descriptive mean trends. Statistical inputs and existing results are not refitted or replaced.
+
+The [PAC directory and reproduction guide](docs/PAC_SEGMENT_EFFECT_DIRECTORY_GUIDE.md) describes the original-versus-adjusted branches, external inputs, unchanged FDR rules, and separate mean calculation/plotting steps. The [source snapshot](docs/source_snapshot_20261011_update.json) records the published code hashes. Python mean-trend plotting additionally requires SciPy. The independent figure-gallery repository is not updated by this code-only publication.
+
 This repository contains the plotting scripts and the required data structure for reproducing the figures.
 
 ## 1. Project structure

@@ -1,0 +1,120 @@
+{
+  "publication_date": "2026-10-12",
+  "changes_snapshot_date": "2026-10-11",
+  "source_repository": "sonia1maslova/seeg_navigation",
+  "previous_commit": "563fc1f24296311a09d95ce752411d58b232939f",
+  "scope": "code, portable configuration dependency, documentation only",
+  "statistics_refitted_or_recomputed": false,
+  "code_files": [
+    {
+      "path": "codes/python/plv/S01_plot_plv_group_significance.py",
+      "change": "add",
+      "bytes": 13677,
+      "sha256": "1b865cbedb2bf2b4022b4a74c716c83591d82bb212aaf00b14b3928474b97079",
+      "git_blob_sha": "056b603a631bc6851e074a32aad16b2e3e45595a"
+    },
+    {
+      "path": "codes/python/granger/posthoc/group/plot_group_granger_combined_rois.py",
+      "change": "add",
+      "bytes": 11218,
+      "sha256": "424f6ecff0b4ed24a0b640893b65ad83e88c1f4db3360b459ef63b5b407739a3",
+      "git_blob_sha": "cbb514a3ced41d62cde1ea8ca2d3fa17b718abc8"
+    },
+    {
+      "path": "codes/r/dfi/bandpass/S05_plot_corridor_bandpass_dfi_group.R",
+      "change": "add",
+      "bytes": 24858,
+      "sha256": "69d7cb2f91ae754f0e1af903770ea4ead82291d26d7c8cb44ff2b487bc1cfad3",
+      "git_blob_sha": "e69d3ab0f23c28771d093de77fc8ed771a372419"
+    },
+    {
+      "path": "codes/r/pac/by_lina/README.md",
+      "change": "update",
+      "bytes": 9130,
+      "sha256": "4e9c24cc39902277d3aa141a87ee1dccc04c17afea54f823f9414340437ed35b",
+      "git_blob_sha": "373925bef44816e106a5597715b986a3a20f4fbd"
+    },
+    {
+      "path": "codes/r/pac/by_lina/visualization/plot_pac_segment_effect_heatmap.R",
+      "change": "update",
+      "bytes": 10911,
+      "sha256": "733de40e0c5fad19afc79f7a922e8ae9e0a8c04aa9651e26e5c352ca8bb59be1",
+      "git_blob_sha": "d470ad0a92d0c244579ca7f7bc27a1ce6132a550"
+    },
+    {
+      "path": "codes/r/pac/by_lina/visualization/plot_pac_control_effect_heatmaps.R",
+      "change": "update",
+      "bytes": 12146,
+      "sha256": "cba4ee5163ded38c8e5d8345ef652511a9c6a7e9980b926a5001be7a9dea8ee6",
+      "git_blob_sha": "a71e24858dff7b009e1d657530d8dcf75c1b85c1"
+    },
+    {
+      "path": "codes/r/pac/by_lina/visualization/plot_adjusted_pac_segment_effect_heatmaps.R",
+      "change": "update",
+      "bytes": 15662,
+      "sha256": "109891259ae1128313d77a29be20a09f0b699b215296c5585c8b0b1539cbf990",
+      "git_blob_sha": "bcf1930e5f32fc3cd0d14692df02c420538c05f1"
+    },
+    {
+      "path": "codes/python/pac/by_lina/visualization/plot_pac_segment_effect_forests.py",
+      "change": "add",
+      "bytes": 23095,
+      "sha256": "38002aeb70d94b47d186e7576d4b4ad06664e3e27f0b107fdb33e7696862413b",
+      "git_blob_sha": "07cac9bb47869e24393f9be560eaa23e427c4ee0"
+    },
+    {
+      "path": "codes/python/pac/by_lina/visualization/prepare_adjusted_pac_mean_trends.py",
+      "change": "add",
+      "bytes": 12353,
+      "sha256": "46a6e073ea7ff422945a1e1958d78ab45b5281285ae772f570b1523cdc8076e5",
+      "git_blob_sha": "8c6f44456cd67e864549a6f0ce252bc2b89f751a"
+    },
+    {
+      "path": "codes/python/pac/by_lina/visualization/plot_adjusted_pac_mean_trends.py",
+      "change": "add",
+      "bytes": 8125,
+      "sha256": "8afe9e14d82ccf7de17c3a432cbeb7aa7359bcd92423c84eac791921f486a9de",
+      "git_blob_sha": "cccca9aa8d5f7509d295827a642f0d208a7bf553"
+    },
+    {
+      "path": "codes/python/plv/functions/__init__.py",
+      "change": "add",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "codes/python/plv/functions/plv_plot_style.py",
+      "change": "add",
+      "bytes": 4392,
+      "sha256": "8b6ee805e0769a06f420f41f529f27f7a0ae06849d314f145df99e7234ea1523",
+      "git_blob_sha": "d9aadf31374f464f1e432871f285bcd76a4354ec"
+    },
+    {
+      "path": "codes/python/plv/functions/plv_plot_palette.py",
+      "change": "add",
+      "bytes": 596,
+      "sha256": "2db30d7e94aa53b05341626fb8f8d17b15fb5a79e3512f7d4fa161ee0921bb61",
+      "git_blob_sha": "a40f7b45b84b1f268ef4473d13935e4d88d82cd1"
+    },
+    {
+      "path": "codes/python/project_config.py",
+      "change": "add",
+      "bytes": 4806,
+      "sha256": "bf3b863931a3dc50ff6bc2b0af309db6b01a026e528c1137ef4d7a044f5f4cb4",
+      "git_blob_sha": "bd2baf5743085cb4ee9e43eb4e3cc35c817e647a"
+    },
+    {
+      "path": "config/plv_config.json",
+      "change": "add",
+      "bytes": 2399,
+      "sha256": "ed4f96d4a1b0fbd6c2807f5bb706db709c6c7832975a901d56f1ed296335e52f",
+      "git_blob_sha": "c4245907f581fa9743758a881e1309c93deec279"
+    }
+  ],
+  "unchanged_config": {
+    "path": "config/project_config.json",
+    "git_blob_sha": "b624284a8d027dda3626069b897e39dba72ebd58"
+  },
+  "external_inputs_required": true
+}
