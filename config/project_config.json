@@ -1,0 +1,253 @@
+{
+  "project_name": "seeg_navigation",
+  "config_version": "2026-08-18",
+  "sampling_rate_hz": 512,
+  "dataset_modes": [
+    "whole_roi",
+    "ap_split_roi"
+  ],
+  "process_types": [
+    "corridor",
+    "junction"
+  ],
+  "condition_order": [
+    "turns_num2",
+    "turns_num4",
+    "turns_num6"
+  ],
+  "conditions": {
+    "turns_num2": {
+      "trial_ids": [
+        1,
+        6,
+        8,
+        12,
+        15,
+        16,
+        20,
+        22
+      ],
+      "n_junctions": 2,
+      "expected_trial_duration_sec": 21
+    },
+    "turns_num4": {
+      "trial_ids": [
+        2,
+        4,
+        9,
+        11,
+        14,
+        18,
+        19,
+        23
+      ],
+      "n_junctions": 4,
+      "expected_trial_duration_sec": 36
+    },
+    "turns_num6": {
+      "trial_ids": [
+        3,
+        5,
+        7,
+        10,
+        13,
+        17,
+        21,
+        24
+      ],
+      "n_junctions": 6,
+      "expected_trial_duration_sec": 51
+    }
+  },
+  "segment_windows_sec": {
+    "corridor": {
+      "first_start_sec": 0.5,
+      "duration_sec": 5,
+      "cycle_sec": 7.5
+    },
+    "junction": {
+      "first_start_sec": 5.5,
+      "duration_sec": 2.5,
+      "cycle_sec": 7.5
+    }
+  },
+  "paths": {
+    "data": "data",
+    "processed": "data/processed",
+    "trial_timeseries": "data/processed/trial_timeseries",
+    "trial_timeseries_by_turn_number": "data/processed/trial_timeseries_by_turn_number",
+    "derived": "data/derived",
+    "derived_features": "data/derived/features",
+    "behavior": "data/behavior",
+    "encoding": "data/encoding",
+    "metadata": "data/metadata",
+    "feature_selection": "data/feature_selection",
+    "codes": "codes",
+    "results": "results",
+    "figures": "figures",
+    "logs": "logs"
+  },
+  "files": {
+    "raw_seeg_source": "data/raw_data/data.mat",
+    "whole_roi_trial_timeseries": "data/processed/trial_timeseries/whole_roi/data_whole_roi.mat",
+    "ap_split_roi_trial_timeseries": "data/processed/trial_timeseries/ap_split_roi/data_ap_split_roi.mat",
+    "pointing": "data/behavior/pointing.csv",
+    "behavior_summary": "data/behavior/subject_behavior_mean_error.csv",
+    "behavior_summary_legacy": "data/behavior/subject_behavior_mean_error_legacy.csv",
+    "junction_encoding": "data/encoding/turn_encoding_table.csv",
+    "corridor_encoding": "data/encoding/corridor_encoding_table.csv",
+    "corridor_half_encoding": "data/encoding/corridor_subsegi_encoding_table.csv",
+    "junction_encoding_legacy": "data/encoding/turn_encoding_table_legacy.csv",
+    "corridor_encoding_legacy": "data/encoding/corridor_encoding_table_legacy.csv",
+    "corridor_half_encoding_legacy": "data/encoding/corridor_subsegi_encoding_table_legacy.csv",
+    "legacy_feature_names": "data/metadata/fea_names.txt",
+    "sig_dict_junction": "data/feature_selection/sig_dict_turn.json",
+    "sig_dict_corridor": "data/feature_selection/sig_dict_corridor.json"
+  },
+  "ap_split_roi_definition": {
+    "rule": "fixed_contact_specific_mni_y_threshold",
+    "rois": [
+      {
+        "full_name": "Temporal_Mid L",
+        "threshold_y_mm": -28.6905
+      },
+      {
+        "full_name": "Temporal_Sup L",
+        "threshold_y_mm": -28.6905
+      },
+      {
+        "full_name": "Hippocampus L",
+        "threshold_y_mm": -21
+      },
+      {
+        "full_name": "Hippocampus R",
+        "threshold_y_mm": -21
+      }
+    ]
+  },
+  "roi_abbreviations": [
+    {
+      "full_name": "Temporal_Mid L",
+      "abbreviation": "Temp Mid L"
+    },
+    {
+      "full_name": "Temporal_Inf L",
+      "abbreviation": "Temp Inf L"
+    },
+    {
+      "full_name": "Insula L",
+      "abbreviation": "Insula L"
+    },
+    {
+      "full_name": "Temporal_Sup L",
+      "abbreviation": "Temp Sup L"
+    },
+    {
+      "full_name": "Temporal_Mid R",
+      "abbreviation": "Temp Mid R"
+    },
+    {
+      "full_name": "Fusiform L",
+      "abbreviation": "Fusiform L"
+    },
+    {
+      "full_name": "Postcentral L",
+      "abbreviation": "Postcentral L"
+    },
+    {
+      "full_name": "Frontal_Inf_Tri R",
+      "abbreviation": "Fro Inf Tri R"
+    },
+    {
+      "full_name": "Frontal_Inf_Tri L",
+      "abbreviation": "Fro Inf Tri L"
+    },
+    {
+      "full_name": "Hippocampus L",
+      "abbreviation": "Hippocampus L"
+    },
+    {
+      "full_name": "Rolandic_Oper L",
+      "abbreviation": "Rolandic Oper L"
+    },
+    {
+      "full_name": "Insula R",
+      "abbreviation": "Insula R"
+    },
+    {
+      "full_name": "SupraMarginal L",
+      "abbreviation": "SupraMarginal L"
+    },
+    {
+      "full_name": "Hippocampus R",
+      "abbreviation": "Hippocampus R"
+    },
+    {
+      "full_name": "Precentral L",
+      "abbreviation": "Precentral L"
+    },
+    {
+      "full_name": "Frontal_Inf_Orb_2 L",
+      "abbreviation": "Fro Inf Orb 2 L"
+    },
+    {
+      "full_name": "Frontal_Inf_Oper L",
+      "abbreviation": "Fro Inf Oper L"
+    },
+    {
+      "full_name": "ParaHippocampal L",
+      "abbreviation": "ParaHippocampal L"
+    },
+    {
+      "full_name": "Temporal_Pole_Sup L",
+      "abbreviation": "Temp Pole Sup L"
+    },
+    {
+      "full_name": "Calcarine L",
+      "abbreviation": "Calcarine L"
+    },
+    {
+      "full_name": "OFCpost L",
+      "abbreviation": "OFCpost L"
+    },
+    {
+      "full_name": "ParaHippocampal R",
+      "abbreviation": "ParaHippocampal R"
+    },
+    {
+      "full_name": "Temporal_Mid L_Anterior",
+      "abbreviation": "Ant Temp Mid L"
+    },
+    {
+      "full_name": "Temporal_Mid L_Posterior",
+      "abbreviation": "Post Temp Mid L"
+    },
+    {
+      "full_name": "Hippocampus L_Anterior",
+      "abbreviation": "Ant Hippocampus L"
+    },
+    {
+      "full_name": "Hippocampus L_Posterior",
+      "abbreviation": "Post Hippocampus L"
+    },
+    {
+      "full_name": "Hippocampus R_Anterior",
+      "abbreviation": "Ant Hippocampus R"
+    },
+    {
+      "full_name": "Hippocampus R_Posterior",
+      "abbreviation": "Post Hippocampus R"
+    },
+    {
+      "full_name": "Temporal_Sup L_Anterior",
+      "abbreviation": "Ant Temp Sup L"
+    },
+    {
+      "full_name": "Temporal_Sup L_Posterior",
+      "abbreviation": "Post Temp Sup L"
+    }
+  ],
+  "external": {
+    "mvgc_toolbox": "external/MVGC"
+  }
+}

@@ -20,3 +20,22 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+
+# Protected/local analysis inputs and generated outputs (do not add publicly)
+/results/
+/logs/
+/data/raw_data/
+/data/processed/trial_timeseries/
+/data/processed/trial_timeseries_by_turn_number/
+*.rds
+*.RDS
+*.RData
+*.mat
+*.npz
+*.npy
+.env
+.env.*
+id_ed25519
+id_rsa
+*.pem
+*.key

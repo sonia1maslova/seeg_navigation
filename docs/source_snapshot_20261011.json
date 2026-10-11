@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-11",
+  "scope": "Selected current formal analysis/plotting sources; not a full independent data release",
+  "code_parent": "c44c88b5992db933e9d3ac5f4f4f900f4d59ee94",
+  "files": [
+    {
+      "path": "codes/python/granger/posthoc/granger_layout.py",
+      "source_sha256": "e7b623662d1bca2ceecf8876c33ab04c373dcbe512ba58c0693fc70cf58f6f61",
+      "bytes": 1022
+    },
+    {
+      "path": "codes/python/granger/posthoc/granger_posthoc_config.py",
+      "source_sha256": "aa42fc7b4a134a62cf43e4dc38d97644fedb15ef55ec7aee1a99bce0126f6e63",
+      "bytes": 13382
+    },
+    {
+      "path": "codes/python/granger/posthoc/granger_runtime_config.py",
+      "source_sha256": "6cbe5366ca26fa0e1ce2c224b0e074a686fade8061acf1112f2e9c26dac0a1d0",
+      "bytes": 1864
+    },
+    {
+      "path": "codes/python/granger/posthoc/group/granger_compact_style.py",
+      "source_sha256": "de7ac3ec90e043e5981042caaf6d93a7598a684ca8a15e9f1f16b360a132b314",
+      "bytes": 9089
+    },
+    {
+      "path": "codes/python/granger/posthoc/group/plot_group_granger_p_and_sig_pair_proportion.py",
+      "source_sha256": "6d7f3bc7892c752a7e2e9cb58175c44c3ec7d082cf79d94d51fe859f3905f7fe",
+      "bytes": 30923
+    },
+    {
+      "path": "codes/python/pac/test/plot_circular_vector_averaging_equivalence.py",
+      "source_sha256": "e5424f0162b16157596c3111fd6f6d7320fed1c975ba198003458c37118fd9ea",
+      "bytes": 7314
+    },
+    {
+      "path": "codes/python/pac/test/README.md",
+      "source_sha256": "80ad6120a7de2d1bd8a0ae0cfdf3052a920d683311a61ed8047830f359cacfb5",
+      "bytes": 1854
+    },
+    {
+      "path": "codes/python/pac/test/test_circular_vector_averaging_equivalence.py",
+      "source_sha256": "912803bc96ec7512efe8c5aee33516d1ad18e44440e9b7c89e99f7722403163a",
+      "bytes": 9215
+    },
+    {
+      "path": "codes/python/power/encoding_lmm/S08_plot_power_encoding_forest.py",
+      "source_sha256": "bd9fc00d3b5c3272edf30315132c9389a608f639089f76f7c5c69d824cdcb3b1",
+      "bytes": 14746
+    },
+    {
+      "path": "codes/r/power/encoding_lmm/S01_prepare_power_encoding_data.R",
+      "source_sha256": "f1f5be15e0a1a59d3e8c4b0d6ca6a685d81c241d37635a6f6b6a3a4e0dd6066c",
+      "bytes": 17614
+    },
+    {
+      "path": "codes/r/power/encoding_lmm/S02_run_power_encoding_lmm.R",
+      "source_sha256": "61fc79645b321937d08f88c76033104493e0fcec78b83d5beb12e7958562481d",
+      "bytes": 22481
+    },
+    {
+      "path": "codes/r/power/encoding_lmm/S06_plot_power_encoding_heatmap_Segment_number.R",
+      "source_sha256": "3c59665425a77272e15152c03e61c7232b0cc07548104268e07b09ac0485c6c9",
+      "bytes": 8312
+    },
+    {
+      "path": "codes/r/power/encoding_lmm/S07_correct_power_encoding_fdr.R",
+      "source_sha256": "1a4d6db1417b07d3bf91442e6ddd2c896226438a35e45996a2c0dc7aa01383b2",
+      "bytes": 5878
+    },
+    {
+      "path": "codes/r/project_config.R",
+      "source_sha256": "efb8027cca865c2b3e1020a6eb2a0cb342258562803d5bad6ea04fce8b5e4eb2",
+      "bytes": 4397
+    },
+    {
+      "path": "config/project_config.json",
+      "source_sha256": "64c4c6df54eb387568cb2713667040fc94cabb1234026a1ba1ba232a09c98787",
+      "bytes": 6261,
+      "publication_edit": "portable external paths"
+    },
+    {
+      "path": "codes/python/pac/by_lina/aperiodic_segment_effect_adjusted/plot_aperiodic_segment_effect_forest.py",
+      "source_sha256": "6c77b7497fc6f6a9149e95726a566ee28a096f075da44cc6508de506238a2e4d",
+      "bytes": 11750
+    },
+    {
+      "path": "codes/python/pac/by_lina/pac_behavior/plot_pac_behavior_forest.py",
+      "source_sha256": "e4566c2cde91c002ec9c0d9e5c5c0eb3790ed86c5aa8f3d13bdf41737a4c4084",
+      "bytes": 12633
+    },
+    {
+      "path": "codes/python/pac/by_lina/pac_existence/plot_pac_existence_density.py",
+      "source_sha256": "fa458f487bf571e17939455fd79dc7875abb0f9cfd0aad223cbe91da8e916ba1",
+      "bytes": 15410
+    },
+    {
+      "path": "codes/python/pac/by_lina/pac_existence/plot_pac_existence_forest.py",
+      "source_sha256": "8203afb3ae5f7b69dd508c880b063a492f5eef1173a3acae9300455e90c80a42",
+      "bytes": 19445
+    },
+    {
+      "path": "codes/python/pac/by_lina/pac_existence/README.md",
+      "source_sha256": "01cc98efd5d9a33d3e042a888573024ba5f82b226fe4026d4a65cdc3d58fd43c",
+      "bytes": 1260,
+      "publication_edit": "describe optional density preview"
+    },
+    {
+      "path": "codes/r/pac/by_lina/aperiodic_segment_effect_adjusted/apply_aperiodic_segment_fdr.R",
+      "source_sha256": "4b5ddc6e61bf8b9f87a279faf35d337e450806dffdf00ecc5d26775278091734",
+      "bytes": 6751
+    },
+    {
+      "path": "codes/r/pac/by_lina/aperiodic_segment_effect_adjusted/README.md",
+      "source_sha256": "90bdcf37d2938c45f190957608b9c05ab094f0cc55060dc5dde302873c9c046d",
+      "bytes": 5825,
+      "publication_edit": "documentation aligned to current horizontal coefficient figure"
+    },
+    {
+      "path": "codes/r/pac/by_lina/aperiodic_segment_effect_adjusted/run_aperiodic_segment_effect_adjusted.R",
+      "source_sha256": "497a7d866cf8bd852878f4544326953bf491d832fd44dee87d2365a7430031f2",
+      "bytes": 16269
+    },
+    {
+      "path": "codes/r/pac/by_lina/pac_behavior/apply_pac_behavior_fdr.R",
+      "source_sha256": "2e1bdbb8f935db87d5164aaced54b25e0dffca09a8b15c46c7553662d16e99ac",
+      "bytes": 7346
+    },
+    {
+      "path": "codes/r/pac/by_lina/pac_behavior/README.md",
+      "source_sha256": "42491b185bcdb2dca9c169a1fd8afb6a89b39c444ca6ed7ee5c8a767d47d7b47",
+      "bytes": 2574
+    },
+    {
+      "path": "codes/r/pac/by_lina/README.md",
+      "source_sha256": "6518e23f840f077a939ca199898292876a1cf908d53753ca9511ff98505fcd6b",
+      "bytes": 6949
+    },
+    {
+      "path": "codes/r/pac/by_lina/segment_effect_adjusted/run_segment_effect_adjusted.R",
+      "source_sha256": "47a00ec3d623b9ca568cc8b29279017f66d3917bd6e4b2136895269efa467ed0",
+      "bytes": 23399
+    },
+    {
+      "path": "codes/r/pac/by_lina/visualization/plot_adjusted_pac_segment_effect_heatmaps.R",
+      "source_sha256": "9408d4a79abff93bfcdd9711de614d86f4a5d8d56c536baa1cbedafe47d87cbd",
+      "bytes": 15634
+    },
+    {
+      "path": "codes/r/pac/by_lina/visualization/plot_pac_control_effect_heatmaps.R",
+      "source_sha256": "3efb890d59a05adc5aeaf22e98c294378a24fcd47bbeb6bcbdceb5a2d6dd5e73",
+      "bytes": 11960
+    },
+    {
+      "path": "codes/r/pac/by_lina/visualization/plot_pac_segment_effect_heatmap.R",
+      "source_sha256": "5b909d83eb86d626472daa0e77e3bf01fd3a4a2125ad5f10a9028df90703387b",
+      "bytes": 10614
+    },
+    {
+      "path": "codes/r/power/encoding_lmm/bearing_position_to_start/bearing_branch_common.R",
+      "source_sha256": "6f8869913ac2585a5908b9024911be9664bf2a2eac321b6ec765d26ee008f566",
+      "bytes": 7145
+    },
+    {
+      "path": "codes/r/power/encoding_lmm/bearing_position_to_start/plot_power_bearing_position_to_start.R",
+      "source_sha256": "58e1425583fe4a576238c1ce7723d6e686ee3766b8feef1e87fbca8b2efdb5d6",
+      "bytes": 7481
+    },
+    {
+      "path": "codes/r/power/encoding_lmm/bearing_position_to_start/README.md",
+      "source_sha256": "f4d685cabadce33b781e04cbeb70699a76d985a849dc7137ec12f01726c7e506",
+      "bytes": 3488
+    },
+    {
+      "path": "codes/r/power/encoding_lmm/bearing_position_to_start/run_power_bearing_position_to_start.R",
+      "source_sha256": "eb24712ddaa33dc055be7f29e5a1de926fc44ea09de363651c08ed8d7075742b",
+      "bytes": 14547
+    },
+    {
+      "path": "codes/python/behavior/encoding/prepare_position_to_start_encoding.py",
+      "source_sha256": "fa2246a88fe45e90e7db0a67354e6e1b7fd681eab7ee9ba1eacfc48c1ac89804",
+      "bytes": 4876
+    },
+    {
+      "path": "config/granger_formal_20261003_order_aligned.json",
+      "source_sha256": "c3749ba3d13bc8d5109df22451a4ca6ba1d1331530bb89283f7ee98a139348c4",
+      "source_path": "results/granger/formal_20261003/posthoc/order_aligned/source_config.json",
+      "publication_edit": "portable external paths"
+    },
+    {
+      "path": "config/granger_formal_20261003_order_aligned_and_terminal_aligned.json",
+      "source_sha256": "afae307355bf3a40ef3a41262752217995af723feba38d71aa197481c5858e52",
+      "source_path": "results/granger/formal_20261003/posthoc/order_aligned_and_terminal_aligned/source_config.json",
+      "publication_edit": "portable external paths"
+    },
+    {
+      "path": "config/granger_config.json",
+      "source_sha256": "afae307355bf3a40ef3a41262752217995af723feba38d71aa197481c5858e52",
+      "source_path": "results/granger/formal_20261003/posthoc/order_aligned_and_terminal_aligned/source_config.json",
+      "publication_edit": "formal terminal-aligned default; portable external paths"
+    }
+  ],
+  "protected_inputs_uploaded": false,
+  "statistical_refit_performed": false
+}

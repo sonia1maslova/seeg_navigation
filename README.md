@@ -239,3 +239,9 @@ codes/project_paths.py
 ```
 
 If the project folder is moved to a different location, the scripts should still work as long as the internal folder structure remains unchanged.
+
+## Recent analysis and formal figures (2026-10-11)
+
+Current PAC, Power and Granger source additions, dependencies, reporting conventions and reproduction limits are documented in [the recent snapshot guide](docs/RECENT_ANALYSIS_AND_FIGURES_20261011.md). Existing figure scripts and data-manifest content are retained. No protected input data or credentials are added by this update.
+
+Formal rendered PNGs are managed separately in [the figure gallery repository](https://github.com/sonia1maslova/seeg-navigation-figure-gallery), with [the online gallery](https://sonia1maslova.github.io/seeg-navigation-figure-gallery/).

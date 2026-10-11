@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "source_of_shared_parameters": "S1_compute_granger_allpairs_downsample320.m",
+  "data_root": "data/granger",
+  "data_file": "data_AntePost_split.mat",
+  "results_root": "results/granger/formal_20261003",
+  "posthoc_root": "figures/granger/formal_20261003",
+  "mvgc_root": "external/MVGC",
+  "brain_area1s": [
+    "Temporal_Mid L_Anterior"
+  ],
+  "brain_area2s": [
+    "Hippocampus L_Anterior",
+    "Hippocampus L_Posterior",
+    "ParaHippocampal L",
+    "OFCpost L",
+    "Hippocampus R_Anterior"
+  ],
+  "process_types": [
+    "corridor",
+    "junction"
+  ],
+  "alignment_modes": [
+    "order_aligned",
+    "terminal_aligned"
+  ],
+  "end_split": 1,
+  "gc_params": {
+    "Fs_original": 512,
+    "Fs": 320,
+    "do_downsample_to_target_Fs": true,
+    "model_order_mode": "bic",
+    "fixed_morder": 15,
+    "momax": 30,
+    "regmode": "LWR",
+    "nfreqs": 160,
+    "require_stable": true,
+    "min_cov_eig": 1e-10,
+    "use_eta_runtime_stop": false,
+    "max_estimated_pair_runtime_sec": 480,
+    "eta_min_elapsed_sec": 30,
+    "eta_min_completed_shuffles": 12,
+    "eta_check_interval_sec": 120,
+    "eta_safety_factor": 1.05,
+    "shuffle_batch_size": 192,
+    "max_pair_runtime_sec": 600,
+    "max_observed_runtime_sec": 100,
+    "use_parallel": true,
+    "n_workers": 24,
+    "parallel_level": "shuffle",
+    "max_threads_per_worker": 1,
+    "do_shuffle": true,
+    "nshuffles": 1000,
+    "shuffle_alpha": 0.05,
+    "surrogate_method": "trial_shuffle",
+    "time_shift_mode": "per_trial",
+    "time_shift_min_sec": 0.1,
+    "time_shift_min_samples": [],
+    "save_shuffle_distributions": true,
+    "rng_seed": 20260617,
+    "exclude_subject_ids": [],
+    "min_trials": 7,
+    "max_trials_per_pair": "Inf",
+    "trial_subsample_mode": "random",
+    "min_samples": 200,
+    "do_detrend": true,
+    "do_zscore": true,
+    "area_prob_thresh": 0.5,
+    "max_channels_per_area": "Inf",
+    "max_channel_pairs_per_subject": "Inf",
+    "subject_summary_method": "median",
+    "min_pairs_per_subject": 1,
+    "verbose": false,
+    "suppress_mvgc_output": true,
+    "suppress_pair_output": true,
+    "save_full_pair_struct": true,
+    "show_progress_bar": false,
+    "progress_width": 16,
+    "progress_update_every": 1,
+    "print_pair_log": true,
+    "print_shuffle_p": true,
+    "freq_band_names": [
+      "slow_0p5_4Hz",
+      "theta_alpha_4_12",
+      "beta_12_30",
+      "low_gamma_30_70",
+      "high_gamma_70_150"
+    ],
+    "freq_bands": [
+      [
+        0.5,
+        4
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        12,
+        30
+      ],
+      [
+        30,
+        70
+      ],
+      [
+        70,
+        150
+      ]
+    ]
+  },
+  "posthoc": {
+    "alpha": 0.05,
+    "pair_agg_method": "mean",
+    "subject_agg_method": "mean",
+    "min_subjects": 2
+  },
+  "directionality": {
+    "min_pairs_per_subject": 10,
+    "n_direction_permutations": 10000,
+    "rng_seed": 20260626
+  },
+  "notes": [
+    "Edit granger_config.py and regenerate this JSON; do not hand-edit both files.",
+    "S1-S4 share acquisition/input/model/surrogate settings; S4 keeps its directionality settings.",
+    "Formal run uses the aMTG source and five pre-specified target regions.",
+    "Granger uses order_aligned/terminal_aligned and trial_shuffle.",
+    "PAC is a parallel analysis and keeps exclude_last/include_last plus circular-shift surrogates.",
+    "With Fs=320 and the intended 1-Hz grid, 0.5-4 and 1-4 select the same bins.",
+    "Public source snapshot: only data/toolbox paths are portable placeholders; original analysis settings retained. No S4 direction-difference test was run."
+  ]
+}
